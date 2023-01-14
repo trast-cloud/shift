@@ -5,18 +5,18 @@ public class Sort {
         int[] arrResult = new int[lenFile1 + lenFile2];
         int a = 0, b = 0, r = 0, idx = 0, index = 0, iDesc = arrResult.length - 1;
 
-        while (a < ArrFile1.length && b < ArrFile2.length){
+        while (a < ArrFile1.length && b < ArrFile2.length) {
             if (ArrFile1[a] <= ArrFile2[b])
                 arrAsc[r++] = ArrFile1[a++];
             else
                 arrAsc[r++] = ArrFile2[b++];
         }
 
-        while (a < lenFile1){
+        while (a < lenFile1) {
             arrAsc[r++] = ArrFile1[a++];
         }
 
-        while (b < lenFile2){
+        while (b < lenFile2) {
             arrAsc[r++] = ArrFile2[b++];
         }
 
@@ -29,7 +29,6 @@ public class Sort {
             }
         }
         else {
-            index = 0;
             for (int i = 0; i < arrResult.length; i++) {
                 arrResult[i] = arrAsc[index++];
             }

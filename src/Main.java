@@ -28,7 +28,7 @@ public class Main {
         }
         readerFile2.close();
 
-        int[] arrWrite = Sort.StartSortInt(arrFile1, arrFile2, arrFile1.length, arrFile2.length, false);
+        int[] arrWrite = Sort.StartSortInt(arrFile1, arrFile2, arrFile1.length, arrFile2.length, true);
 
         FileWriter newRec = new FileWriter("sample.txt");
         for (int a = 0; a < arrWrite.length; a++) {
